@@ -1,120 +1,93 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events</title>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Events</title>
+    <div class="topbar">
+      <h3>Event Hub</h3>
+      <p>Admin</p>
+    </div>
 
-        <link rel="stylesheet" href="style.css" />
-      </head>
-      <body>
-        <div class="topbar">
-          <h3>Event Management System</h3>
-          <p>Admin</p>
+    <div class="sidebar">
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="attendees.html">Attendees</a></li>
+        <li><a href="registration.html">Registrations</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="content">
+        <div class="page-header">
+          <h1>Events</h1>
+
+          <a href="event-form.html" class="btn1">+ Add Event</a>
         </div>
 
-        <div class="sidebar">
-          <ul>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="events.html" class="active">Events</a></li>
-            <li><a href="attendees.html">Attendees</a></li>
-            <li><a href="registration.html">Registrations</a></li>
-            <li><a href="login.html">Logout</a></li>
-          </ul>
+        <input
+          type="text"
+          class="search-box"
+          placeholder="Search events by name"
+        />
+
+        <div class="table-container">
+          <table>
+            <tr>
+              <th>Event Name</th>
+              <th>Date</th>
+              <th>Location</th>
+              <th>Attendees</th>
+              <th>Actions</th>
+            </tr>
+
+            <tr>
+              <td>Annual Tech Conference</td>
+              <td>May 20, 2025</td>
+              <td>New York</td>
+              <td>120</td>
+
+              <td class="actions">
+                <a href="event-view.html" class="view-btn">View</a>
+
+                <a href="event-edit.html" class="edit-btn">Edit</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Marketing Summit</td>
+              <td>June 15, 2025</td>
+              <td>Chicago</td>
+              <td>85</td>
+
+              <td class="actions">
+                <a href="event-view.html" class="view-btn">View</a>
+
+                <a href="event-edit.html" class="edit-btn">Edit</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Product Launch Event</td>
+              <td>July 10, 2025</td>
+              <td>San Francisco</td>
+              <td>60</td>
+
+              <td class="actions">
+                <a href="event-view.html" class="view-btn">View</a>
+
+                <a href="event-edit.html" class="edit-btn">Edit</a>
+              </td>
+            </tr>
+          </table>
         </div>
-
-        <div class="main">
-          <div class="content">
-            <div class="page-header">
-              <h1>Events</h1>
-
-              <a href="event-form.html">
-                <button class="btn">+ Add Event</button>
-              </a>
-            </div>
-
-            <input
-              type="text"
-              class="search-box"
-              placeholder="Search events by name"
-            />
-
-            <div class="table-container">
-              <table>
-                <tr>
-                  <th>Event Name</th>
-                  <th>Date</th>
-                  <th>Location</th>
-                  <th>Attendees</th>
-                  <th>Actions</th>
-                </tr>
-
-                <tr>
-                  <td>Annual Tech Conference</td>
-                  <td>May 20, 2025</td>
-                  <td>New York</td>
-                  <td>120</td>
-
-                  <td>
-                    <a href="event-view.html">
-                      <button class="btn">View</button>
-                    </a>
-
-                    <a href="event-edit.html">
-                      <button class="btn">Edit</button>
-                    </a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Marketing Summit</td>
-                  <td>June 15, 2025</td>
-                  <td>Chicago</td>
-                  <td>85</td>
-
-                  <td>
-                    <a href="event-view.html">
-                      <button class="btn">View</button>
-                    </a>
-
-                    <a href="event-edit.html">
-                      <button class="btn">Edit</button>
-                    </a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Product Launch Event</td>
-                  <td>July 10, 2025</td>
-                  <td>San Francisco</td>
-                  <td>60</td>
-
-                  <td>
-                    <a href="event-view.html">
-                      <button class="btn">View</button>
-                    </a>
-
-                    <a href="event-edit.html">
-                      <button class="btn">Edit</button>
-                    </a>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </body>
-    </html>
+      </div>
+    </div>
   </body>
 </html>
